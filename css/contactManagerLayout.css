@@ -2,55 +2,74 @@
     auteur: Nicolas Chourot
  */
 body {
-    background-color: white;
+    background-image: linear-gradient(#e66465, #9198e5);
+}
+.container {
+    margin-bottom: 100px;
 }
 button {
     padding: 2px 3px;
-    font-size: small;
-    color: blue;
+    padding-left:4px;
+    font-size: 14px;
+    color: white;
+    background-color: #e66465;
+}
+button:hover {
+    background-color: #d6e0f5;
+}
+.appHeader {
+    color:white;
+    font-weight:bolder;
 }
 .header-container {
     overflow-y: scroll;
     overflow-x: hidden;
 }
-.header-contacts-container {
+.header-bookmark-container {
     display: grid;
     grid-template-columns: 25% 25% 35% 5% 10%;
 }
-.header-contacts-container div {
-    font-size: large;
+.header-bookmark-container div {
+    font-size: 22px;
     font-weight: bold;
     text-align: left;
     padding: 5px;
-    background-color: gray;
+    background-color: #9198e5;
     color: white;
 }
-.contact-list-scroll-containter {
-    height: 320px;
+.bookmark-list-scroll-containter {
+    height: 80vh;
     overflow-y: scroll;
     overflow-x: hidden;
+    background-color: white;
 }
-.contact-list-container {
+.bookmark-list-container {
     display: grid;
     grid-template-columns:   25% 25% 35% 5% 10%;
 }
-.contact-list-container div {
+.bookmark-list-container div {
     text-align: left;
     padding: 5px;
 }
 .oddRow {
     background-color: white;
+    border-top:1px solid white;
+    border-bottom:1px solid white;
 }
 .evenRow {
-    background-color: lightcyan;
+    background-color: #d6e0f5;
+    border-top:1px solid #d6e0f5;
+    border-bottom:1px solid #d6e0f5;
 }
-
+.selectedRow {
+    border-top:1px solid #9198e5;
+    border-bottom:1px solid #9198e5;
+}
 .waiting {
     font-size: 14px;
     font-weight: bold;
-    color:green;
+    color:#9198e5;
 }
-
 .httpError {
     font-size: 14px;
     font-weight: bold;
@@ -59,16 +78,16 @@ button {
 .form-container {
     overflow-y: hidden;
 }
-.form-contact-container {
+.form-bookmark-container {
     display: grid;
-    grid-template-columns:  25% 25% 35% 5% 10%;
+    grid-template-columns:  15% 45% 25% 5% 10%;
     overflow-y: scroll;
     overflow-x: hidden;
 }
-.form-contact-container div {
+.form-bookmark-container div {
     text-align: left;
     padding: 5px;
-    background-color: lightgray;
+    background-color: #d6e0f5;
 }
 .array-container {
     border:1px solid black;
@@ -76,8 +95,21 @@ button {
 .cell {
     height: 40px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
 }
-.selectedRow {
-    background-color: darkturquoise;
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
+ .favIcon{
+     text-align: center;
+     background-image: url(favicon.ico);
+     background-size: contain;
+     background-repeat: no-repeat;
+     height: 32px;
+     width: 32px;
+     margin-right: 5px;
+     float: left;
+ }
+    
